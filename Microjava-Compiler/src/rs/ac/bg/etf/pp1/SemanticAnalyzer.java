@@ -583,48 +583,4 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public void visit(CondFactBool condFactBool) {
 		condFactBool.integer = -1;
 	}
-
-	
-
-	
-/*
-	
-    public void visit(PrintStmt print) {
-    	if(print.getExpr().struct != Tab.intType && print.getExpr().struct!= Tab.charType) report_error ("Semanticka greska na liniji " + print.getLine() + ": Operand instrukcije PRINT mora biti char ili int tipa", null );
-		printCallCount++;
-	}
-    
-    
-    public void visit(FuncCall funcCall){
-    	Obj func = funcCall.getDesignator().obj;
-    	if(Obj.Meth == func.getKind()){
-			if(Tab.noType == func.getType()){
-				report_error("Semanticka greska " + func.getName() + " ne moze se koristiti u izrazima jer nema povratnu vrednost ", funcCall);
-			}else{
-				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-				funcCall.struct = func.getType();
-			}
-    	}else{
-			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
-			funcCall.struct = Tab.noType;
-    	}
-    }
-
-    
-
-    
-    public void visit(Const cnst){
-    	cnst.struct = Tab.intType;
-    }
-    
-    public void visit(Var var){
-    	var.struct = var.getDesignator().obj.getType();
-    }
-    
-
-    
-    public void visit(Assignment assignment){
-    	if(!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
-    		report_error("Greska na liniji " + assignment.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ", null);
-    }*/
 }
