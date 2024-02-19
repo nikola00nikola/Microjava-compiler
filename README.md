@@ -1,6 +1,6 @@
 
 # Microjava-compiler
-Example micro java source code: [input.mj](https://github.com/nikola00nikola/Microjava-compiler/blob/main/Microjava-Compiler/test/program.mj)
+Input micro java source code: [input.mj](https://github.com/nikola00nikola/Microjava-compiler/blob/main/Microjava-Compiler/test/program.mj)
 
 Simple and functional compiler for micro java.
 The compiler works in **4 phases**.
